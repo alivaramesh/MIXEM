@@ -1,5 +1,5 @@
 
-Portions of this software are derived from an implemnettaion of SimCLR at https://github.com/sthalles/SimCLR:
+Portions of this software are derived from an implemnettaion of SimCLR at https://github.com/sthalles/SimCLR which is released under the following license:
 ==============================================================================
 SimCLR License:
 ==============================================================================
@@ -27,7 +27,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------------
 
-Portions of this software are derived from CenterNet at https://github.com/xingyizhou/CenterNet.
+Portions of this software are derived from CenterNet at https://github.com/xingyizhou/CenterNet which is released under the following license:
 ==============================================================================
 CenterNet Licence
 ==============================================================================
