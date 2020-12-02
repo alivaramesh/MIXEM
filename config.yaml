@@ -1,0 +1,103 @@
+batch_size: 512
+epochs: 200
+conv1_k3: False
+eval_every_n_epochs: 10
+init_from: None
+log_every_n_steps: 10
+weight_decay: 1e-5
+learning_rate: 1e-4
+
+loss:
+  temperature: .5
+  use_cosine_similarity: True
+
+model:
+  conv1_stride: 2
+  out_dim: 32
+  base_model: "resnet18"
+  Mixture:
+    n_comps: 10
+    w_entropy: 2.
+    w_push: 0.05
+    w_pull: 0.1
+    pimax_loss_w: .1
+
+dataset:
+  dataset: STL10_TrainTest
+  STL10:
+    s: 1
+    minscale: 0.08
+    maxscale: 1
+    input_shape: (96,96,3)
+    num_workers: 0
+    valid_size: 0.05
+  STL10_Train:
+    s: 1
+    minscale: 0.08
+    maxscale: 1
+    input_shape: (96,96,3)
+    num_workers: 0
+    valid_size: -1
+  STL10_TrainTest:
+    s: 1
+    minscale: 0.08
+    maxscale: 1
+    input_shape: (96,96,3)
+    num_workers: 0
+    valid_size: .07
+  CIFAR10:
+    s: 1
+    minscale: .08
+    maxscale: 1
+    input_shape: (32,32,3)
+    num_workers: 0
+    valid_size: 0.1
+  CIFAR10_TrainTest:
+    s: 1
+    minscale: .08
+    maxscale: 1
+    input_shape: (32,32,3)
+    num_workers: 0
+    valid_size: 0.1
+  CIFAR100:
+    s: 1
+    minscale: .08
+    maxscale: 1
+    input_shape: (32,32,3)
+    num_workers: 0
+    valid_size: 0.1
+  CIFAR100_TrainTest:
+    s: 1
+    minscale: .08
+    maxscale: 1
+    input_shape: (32,32,3)
+    num_workers: 0
+    valid_size: 0.1
+  CIFAR100_Test:
+    s: 1
+    minscale: .08
+    maxscale: 1
+    input_shape: (32,32,3)
+    num_workers: 0
+    valid_size: 0.1
+  CIFAR100_20:
+    s: 1
+    minscale: .08
+    maxscale: 1
+    input_shape: (32,32,3)
+    num_workers: 0
+    valid_size: 0.1
+  CIFAR100_20_TrainTest:
+    s: 1
+    minscale: .08
+    maxscale: 1
+    input_shape: (32,32,3)
+    num_workers: 0
+    valid_size: 0.1
+  CIFAR100_20_Test:
+    s: 1
+    minscale: .08
+    maxscale: 1
+    input_shape: (32,32,3)
+    num_workers: 0
+    valid_size: 0.1
