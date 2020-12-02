@@ -27,7 +27,7 @@ Remove "Mixture" from the "model" in the config.yaml file.
 
 To evaluate the clusters, use the `cluster_eval.py` script as follows:
 
-python cluster_eval.py <dataset_dir> <dataset_name> <model_path> <model_config_path> <num_clusters>
+`python cluster_eval.py <dataset_dir> <dataset_name> <model_path> <model_config_path> <num_clusters>`
 
 #### Acknoledgements
 In developing our codebase, we have used [the implementation of SimCLR by Thalles Silva](https://github.com/sthalles/SimCLR)
